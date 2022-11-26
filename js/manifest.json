@@ -4,8 +4,7 @@
  "theme_color": "#000000",
  "background_color": "#000000",
  "display": "standalone",
- "scope": "/",
- "start_url": "/test-pwa/",
+ "start_url": ".",
  "icons": [
   {
    "src": "../src/icons/android-icon-36x36.png",
