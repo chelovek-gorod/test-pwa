@@ -2,9 +2,9 @@
 
 const staticCashName = 'static-cash';
 const staticURLs = [
-    'index.html',
-    './style/style.css',
-    './js/main.js'
+    './test-pwa/index.html',
+    './test-pwa/style/style.css',
+    './test-pwa/js/main.js'
 ];
 
 self.addEventListener('install', async event => {
