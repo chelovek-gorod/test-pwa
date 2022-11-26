@@ -133,7 +133,6 @@ function getRegistrationResponse(data, socket) {
 
     let imageButton = document.createElement("button");
     imageButton.id = 'imageButton';
-    imageButton.innerHTML = ' ';
     imageButton.onclick = function() { inputFile.click() };
     sendBoard.append(imageButton);
 
@@ -354,24 +353,4 @@ function getDateFromMilliSeconds(ms) {
   resultHTML += `<span class="seconds"> ${seconds > 9 ? seconds : '0'+seconds}</span>`;
 
   return resultHTML;
-}
-
-function testContentMessage(message) {
-  let regExp = /([^\"=]{2}|^)((https?|ftp):\/\/\S+[^\s.,> )\];'\"!?])/;
-  let subst = '$1<a href="$2" target="_blank">$2</a>';
-  return message.replace(regExp, subst);
-}
-
-function sendFile() {
-  let file = document.getElementById('filename').files[0];
-  let reader = new FileReader();
-  let rawData = new ArrayBuffer();            
-  reader.loadend = function() {
-  }
-  reader.onload = function(e) {
-    rawData = e.target.result;
-    ws.send(rawData);
-    alert("the File has been transferred.")
-  }
-  reader.readAsArrayBuffer(file);
 }
