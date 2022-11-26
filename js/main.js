@@ -2,6 +2,7 @@
 
 // REGISTERED SERVICE WORKER
 if ('serviceWorker' in navigator) {
+  console.log('Есть поддержка Service worker');
   navigator.serviceWorker.register('./sw.js').then(function(registration) {
     console.log('Service worker зарегистрирован:', registration);
   }).catch(function(error) {
