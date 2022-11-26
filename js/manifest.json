@@ -5,11 +5,7 @@
  "background_color": "#000000",
  "display": "fullscreen",
  "scope": "/",
-<<<<<<< HEAD:js/manifest.json
  "start_url": "/test-pwa/",
-=======
-  "start_url": "/test-pwa/",
->>>>>>> d0221b313ac75d250c71954f768b2a11fde4ad4e:manifest.json
  "icons": [
   {
    "src": "./src/icons/android-icon-36x36.png",
