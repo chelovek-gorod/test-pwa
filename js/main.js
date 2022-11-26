@@ -1,17 +1,5 @@
 'use strict'
 
-// REGISTERED SERVICE WORKER
-if ('serviceWorker' in navigator) {
-  console.log('Есть поддержка Service worker');
-  navigator.serviceWorker.register('./sw.js').then(function(registration) {
-    console.log('Service worker зарегистрирован:', registration);
-  }).catch(function(error) {
-    console.log('Ошибка при регистрации service worker-а:', error);
-  });
-} else {
-  console.log('Текущий браузер не поддерживает service worker-ы');
-}
-
 // CONNECTION
 
 const socketURL = 'wss://cursovaya-psp-server.onrender.com' // 'wss://cursovaya-psp-server.onrender.com'; // 'wss://cursovaya-psp.herokuapp.com' // 'ws://localhost:9000' 
@@ -145,7 +133,7 @@ function getRegistrationResponse(data, socket) {
 
     let imageButton = document.createElement("button");
     imageButton.id = 'imageButton';
-    imageButton.innerHTML = '&#128449;';
+    imageButton.innerHTML = ' ';
     imageButton.onclick = function() { inputFile.click() };
     sendBoard.append(imageButton);
 
