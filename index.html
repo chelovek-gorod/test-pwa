@@ -24,16 +24,10 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./src/icons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="96x96" href="./src/icons/favicon-96x96.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./src/icons/favicon-16x16.png">
-        <link rel="manifest" href="./manifest.json">
+        <link rel="manifest" href="./js/manifest.json">
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="msapplication-TileImage" content="./src/icons/ms-icon-144x144.png">
         <meta name="theme-color" content="#000000">
-
-        <script type="module" data-skip-moving="true">
-            import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-            const el = document.createElement('pwa-update');
-            document.body.appendChild(el);
-        </script>
     </head>
     <body>
 
@@ -50,7 +44,6 @@
         <input style="display: none;" type="file" id="inputFile" accept="image/jpeg,image/jpg,image/png,image/gif">
 
         <script src="./js/main.js"></script>
-        <script src="./pwabuilder-sw-register.js"></script>
 
     </body>
 </html>
