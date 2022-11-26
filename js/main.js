@@ -2,7 +2,7 @@
 
 // REGISTERED SERVICE WORKER
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('./sw.js').then(function(registration) {
+  navigator.serviceWorker.register('../test-pwa/sw.js').then(function(registration) {
     console.log('Service worker зарегистрирован:', registration);
   }).catch(function(error) {
     console.log('Ошибка при регистрации service worker-а:', error);
