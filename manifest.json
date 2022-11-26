@@ -1,9 +1,11 @@
 {
  "name": "Marvel chat",
+ "short_name": "M-chat",
  "theme_color": "#000000",
  "background_color": "#000000",
  "display": "standalone",
- "start_url": "./",
+ "scope": "/",
+  "start_url": "/",
  "icons": [
   {
    "src": "./src/icons/android-icon-36x36.png",

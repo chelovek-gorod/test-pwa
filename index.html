@@ -28,6 +28,12 @@
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="msapplication-TileImage" content="./src/icons/ms-icon-144x144.png">
         <meta name="theme-color" content="#000000">
+
+        <script type="module" data-skip-moving="true">
+            import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+            const el = document.createElement('pwa-update');
+            document.body.appendChild(el);
+        </script>
     </head>
     <body>
 
@@ -44,6 +50,7 @@
         <input style="display: none;" type="file" id="inputFile" accept="image/jpeg,image/jpg,image/png,image/gif">
 
         <script src="./js/main.js"></script>
+        <script src=”/pwabuilder-sw-register.js”></script>
 
     </body>
 </html>

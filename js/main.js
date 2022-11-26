@@ -1,6 +1,7 @@
 'use strict'
 
 // REGISTERED SERVICE WORKER
+/*
 if ('serviceWorker' in navigator) {
   console.log('Есть поддержка Service worker');
   navigator.serviceWorker.register('./sw.js').then(function(registration) {
@@ -11,6 +12,7 @@ if ('serviceWorker' in navigator) {
 } else {
   console.log('Текущий браузер не поддерживает service worker-ы');
 }
+*/
 
 // CONNECTION
 
